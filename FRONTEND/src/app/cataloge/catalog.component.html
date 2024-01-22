@@ -1,0 +1,19 @@
+<div *ngIf="(connectionStatus | async) == false">
+    Tu n'es pas connecté Mec !
+</div>
+
+<div class="form-group">
+    <label for="product-search">Nom du produit:</label>
+    <input #searchinput id="product-search" type="text" class="form-control" placeholder="Rechercher un produit" value="" />
+</div>
+
+<div *ngIf="connectionStatus | async">
+    <div *ngIf="model | async as products">
+        <div *ngFor="let p of products">
+            <div>{{ p.nom }}</div>
+            <div>{{ p.description }}</div>
+            <div>{{ p.prix }}</div>
+            <button (click)="ajouterPanier(p)">Ajouter le produit au panier</button>
+        </div>
+    </div>
+</div>

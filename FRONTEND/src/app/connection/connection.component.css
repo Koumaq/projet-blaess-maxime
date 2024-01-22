@@ -1,0 +1,70 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px auto;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3490dc;
+    color: #fff;
+    border: 1px solid #3490dc;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+div * ngIf {
+    margin-top: 15px;
+    color: #00aa00;
+}
+
+div a {
+    color: #3490dc;
+    text-decoration: none;
+}
+
+div a:hover {
+    text-decoration: underline;
+}
+
+div {
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+}
+
+a {
+    color: #3490dc;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

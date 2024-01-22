@@ -1,0 +1,26 @@
+/* Styliser la liste des éléments */
+
+div {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: #3490dc;
+    color: #fff;
+    border: 1px solid #3490dc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+div+div {
+    margin-top: 10px;
+}
+
+button:last-child {
+    margin-top: 20px;
+}

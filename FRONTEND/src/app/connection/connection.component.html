@@ -1,0 +1,24 @@
+<form [formGroup]="connectionForm">
+    <div>
+        <label for="username">Nom d'utilisateur : </label>
+        <input formControlName="username" id="username" />
+    </div>
+    <div>
+        <label for="password">Mot de passe : </label>
+        <input formControlName="password" id="password" type="password" />
+    </div>
+    <div>
+        <button type="submit" [disabled]="connectionForm.invalid" (click)="Connection()">Connexion</button>
+    </div>
+</form>
+
+<div *ngIf="connectionStatus | async">
+    <p>Connexion réussie !</p>
+</div>
+
+<div>
+    <p>
+        Pas encore de compte ?
+        <a routerLink="/account-creation">Inscrivez vous ici !</a>
+    </p>
+</div>

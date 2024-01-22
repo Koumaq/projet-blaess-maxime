@@ -1,0 +1,18 @@
+<div>
+    <div>
+        <a routerLink="/">Shop à Max</a>
+    </div>
+    <div>
+        <a routerLink="/">Accueil</a>
+        <a routerLink="/catalog">Le catalogue</a>
+    </div>
+    <div *ngIf="(connectionStatus | async) == false">
+        <a routerLink="/connection">Connexion</a>
+        <a routerLink="/account-creation">Inscription</a>
+    </div>
+    <div>
+        <a routerLink="/cart">Panier</a>
+    </div>
+</div>
+
+<hr/>

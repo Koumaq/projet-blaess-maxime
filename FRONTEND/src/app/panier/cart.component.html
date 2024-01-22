@@ -1,0 +1,5 @@
+<div *ngFor="let p of list$ | async">
+    {{ p.nom }} {{ p.description }} {{ p.prix }}
+    <button (click)="delCart(p)">Supprimer</button>
+</div>
+<button (click)="SuppTout()">Vider le panier</button>

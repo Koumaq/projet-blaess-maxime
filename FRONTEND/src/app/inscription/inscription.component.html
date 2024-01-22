@@ -1,0 +1,60 @@
+<form [formGroup]="accountCreationForm">
+    <div>
+        <label for="username">Nom d'utilisateur : </label>
+        <input formControlName="username" id="username" />
+    </div>
+    <div>
+        <label for="lastname">Nom : </label>
+        <input formControlName="lastname" id="lastname" />
+    </div>
+    <div>
+        <label for="firstname">Prenom : </label>
+        <input formControlName="firstname" id="firstname" />
+    </div>
+    <div>
+        <label for="address">Adresse : </label>
+        <input formControlName="address" id="address" />
+    </div>
+    <div>
+        <label for="postal">Code postal : </label>
+        <input formControlName="postal" id="postal" />
+    </div>
+    <div>
+        <label for="city">Ville : </label>
+        <input formControlName="city" id="city" />
+    </div>
+    <div>
+        <label for="gender">Sexe : </label>
+        <input formControlName="gender" id="gender" />
+    </div>
+    <div>
+        <label for="phone">Téléphone : </label>
+        <input formControlName="phone" id="phone" />
+    </div>
+    <div>
+        <label for="mail">Adresse mail : </label>
+        <input formControlName="mail" id="mail" />
+    </div>
+    <div>
+        <label for="password">Mot de passe : </label>
+        <input formControlName="password" id="password" type="password" />
+    </div>
+    <div>
+        <label for="confirmpassword">Confirmer le mot de passe : </label>
+        <input formControlName="confirmpassword" id="confirmpassword" type="password" />
+    </div>
+    <div>
+        <button type="submit" [disabled]="accountCreationForm.invalid" (click)="Inscription()">Inscription</button>
+    </div>
+</form>
+
+<div *ngIf="validation">
+    <p>Inscription réussie Mec !</p>
+</div>
+
+<div>
+    <p>
+        T'as déjà un compte ?
+        <a routerLink="/connection">Connectez toi ici !</a>
+    </p>
+</div>

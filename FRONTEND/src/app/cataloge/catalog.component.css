@@ -1,0 +1,51 @@
+div:not(.form-group) {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffcccc;
+    border: 1px solid #ff0000;
+    text-align: center;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+div * ngIf {
+    margin-top: 20px;
+}
+
+div * ngFor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #3490dc;
+    color: #fff;
+    border: 1px solid #3490dc;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #26679e;
+}
