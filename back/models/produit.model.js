@@ -13,7 +13,7 @@ module.exports = (sequelize, Sequelize) => {
         imglink: {
             type: Sequelize.STRING
         },
-        prix: {
+        price: {
             type: Sequelize.FLOAT,
         },
         description: {
