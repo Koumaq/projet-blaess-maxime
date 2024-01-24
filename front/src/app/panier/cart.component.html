@@ -1,5 +1,9 @@
 <div *ngFor="let p of list$ | async">
-    {{ p.nom }} {{ p.description }} {{ p.prix }}
+    {{ p.name }} | {{ p.description }} | {{ p.price }}
     <button (click)="delCart(p)">Supprimer</button>
 </div>
+
+<p>{{ texteAffiche }}</p>
 <button (click)="SuppTout()">Vider le panier</button>
+
+<button (click)="afficherTexte()" (click)="SuppTout()">Valider la Panier</button>

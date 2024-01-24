@@ -25,4 +25,10 @@ export class CartComponent implements OnInit {
   }
   ngOnInit() {
   }
+
+  texteAffiche: string = '';
+
+  afficherTexte() {
+    this.texteAffiche = 'Commande valider, Merci pour votre commande';
+  }
 }

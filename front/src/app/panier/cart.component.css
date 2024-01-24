@@ -24,3 +24,10 @@ div+div {
 button:last-child {
     margin-top: 20px;
 }
+
+p {
+    background-color: #34dc4a;
+    color: #fff;
+    border: 1px solid #135410;
+    padding: 5px 10px;
+}
